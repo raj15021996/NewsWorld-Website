@@ -1,0 +1,13 @@
+#main-card:hover{
+    box-shadow: 0px 5px 10px 0px rgba(214, 210, 210, 0.719), 0 0px 50px 0px rgba(241, 227, 227, 0.511);
+  }
+  #card-image{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-bottom:1px solid black;
+  }
+  #card-ancher:hover,#btn-prev:hover,#btn-next:hover{
+    border: 2px solid rgb(239, 184, 0);
+    background-color: white;
+  }

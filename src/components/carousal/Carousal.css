@@ -1,0 +1,101 @@
+/* ......carousal styling ......*/
+.crousal-img{
+    /* z-index: -1; */
+    width: 100%;
+    height: 25rem;
+  }
+#slider-content{
+  font-size: 65.5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.news-data{
+  width: auto;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.467);
+  color: #fffdfd;
+}
+.title{
+  font-size: 2rem;
+  width:60rem;
+}
+.desc{
+  font-size: 1.5rem; 
+  width:60rem;
+}
+
+.slick-next {
+  right: 0;
+  z-index: 1;
+  top:40%
+}
+.slick-prev{
+  left: 1;
+  z-index: 1;
+  top:40%
+}
+.slick-next:before, .slick-prev:before {
+  font-size: 3rem;
+  line-height: 2;
+}
+@media(max-width:1200px){
+    .crousal-img{
+       height: 20rem
+     }
+     .title{
+        font-size: 1.7rem;
+        width: 750px;
+       }
+     .desc{
+      margin-top: 15px;
+      font-size:1.2rem;
+      width: 750px;
+     }
+     .slick-next:before, .slick-prev:before {
+      font-size: 2rem;
+      line-height: 2;
+    }
+  }
+
+@media(max-width:770px){
+  .crousal-img{
+   height: 18rem;
+   }
+   .title{
+    font-size:1.2rem;
+    width: 25rem;
+    height: 40px;
+   }
+   .desc{
+    margin-top: 20px;
+    font-size:.8rem;
+    width: 20rem;
+   }
+   .slick-next:before, .slick-prev:before {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+}
+@media(max-width:395px){
+  .crousal-img{
+     height: 15rem
+   }
+   .title{
+    font-size: 1rem;
+    width: 300px;
+   }
+   .desc{
+    margin-top: 15px;
+    font-size:.7rem;
+    width: 250px;
+   }
+   
+   .slick-next:before, .slick-prev:before {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}

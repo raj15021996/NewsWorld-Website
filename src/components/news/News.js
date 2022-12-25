@@ -3,7 +3,8 @@ import NewsCard from "./News-Card";
 import ErrorPage from "../ErrorFound/ErrorPage";
 import Loader from "../Loader";
 import Carousal from "../carousal/Carosal";
-
+import Footer from "../footer/Footer";
+import FooterElement from "../footer/Footer";
 export default function News({ country, category, title }) {
   const [newsData, setNewsData] = useState([]);
   const [totalArticles, setTotalArticles] = useState(0);
@@ -35,7 +36,7 @@ export default function News({ country, category, title }) {
       {!dataFetched ? (
         <div className="container my-3"><ErrorPage className="text-center" style={{ marginTop: "90px" }} /></div>
       ) : (
-        <div className="container my-2" style={{ border: "1px solid white" }}>
+        <div className="container my-2">
           <h1 style={{ marginTop: "90px", color: "white", width: "auto" }}>
             NEWS WORLD! - {title}
           </h1>
@@ -86,8 +87,10 @@ export default function News({ country, category, title }) {
               Next &rarr;
             </button>
           </div>
+
         </div>
       )}
+    
     </>
   );
 }

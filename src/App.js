@@ -4,6 +4,8 @@ import News from "./components/news/News";
 import NotFound from "./components/ErrorFound/NotFound";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import FooterElement from "./components/footer/Footer";
+
 
 
 export default function App() {
@@ -21,6 +23,8 @@ export default function App() {
       <Route exact strict path="/science" element={<News key={'science'} country={country}  category={"science"} title={'Science'}/>}></Route>
       <Route exact strict path="*" element={<NotFound/>}></Route>
     </Routes>
+
+    <FooterElement/>
         </>
   )
 }
